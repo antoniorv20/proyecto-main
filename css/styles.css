@@ -1,20 +1,21 @@
-
 /* Variables para los colores y el radio de los bordes */
 :root {
     --white: #ffffff;
-    --dark:#534c4c;
+    --dark: #534c4c;
     --primary: #00B341;
     --secundary: #DE9100;
     --secundaryLight: #dfd4c0;
     --radio-borde: 0.5rem;
 
 }
+
 /************************************************************************/
 
 /* tipo y tamaño base de la fuente */
 html {
     font-family: "Roboto", sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /************************************************************************/
@@ -24,6 +25,8 @@ html {
 * {
     box-sizing: border-box;
 }
+
+    
 
 /************************************************************************/
 
@@ -61,7 +64,7 @@ p {
 
 /************************************************************************/
 
-  /* barra de navegación  */
+/* barra de navegación  */
 .navegacion {
     background-color: var(--primary);
     display: flex;
@@ -107,7 +110,7 @@ p {
     position: relative;
 }
 
-.section-banner{
+.section-banner {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -189,15 +192,15 @@ p {
 
 /* clases que definen las sombras */
 .shadow {
-    box-shadow: 3px 10px 19px -4px rgba(0,0,0,0.57);
+    box-shadow: 3px 10px 19px -4px rgba(0, 0, 0, 0.57);
 }
 
 .shadow-small {
-    box-shadow: 4px 4px 8px 0px rgba(194,194,194,0.7);
+    box-shadow: 4px 4px 8px 0px rgba(194, 194, 194, 0.7);
 }
 
 /* centra todos los textos que haya dentro de las etiquetas section */
-section  {
+section {
     text-align: center;
 }
 
@@ -206,14 +209,14 @@ section  {
 */
 .contenedor-servicios {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
 /* media query para pantallas con un mínimo de 768px
     establece que los hijos se alineen en una fila
 */
-@media (min-width: 768px){
-    .contenedor-servicios{
+@media (min-width: 768px) {
+    .contenedor-servicios {
         flex-direction: row;
     }
 }
@@ -232,7 +235,7 @@ section  {
     width: 7rem;
     background-color: var(--secundary);
     border-radius: 50%;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 /* separa las líneas de los párrafos al doble de la medida por defecto */
@@ -295,6 +298,7 @@ section  {
 }
 
 @media (min-width: 768px) {
+
     /* aplica grid 1 fila con dos columnas */
     .inputs {
         display: grid;
@@ -308,10 +312,9 @@ section  {
 
 /* selecciona el hijo 3 y 4 para que ocupen las dos columnas */
 .container-input:nth-child(3),
-.container-input:nth-child(4)
-{
+.container-input:nth-child(4) {
     grid-column: 1/3;
-} 
+}
 
 .container-input textarea {
     height: 15rem;
