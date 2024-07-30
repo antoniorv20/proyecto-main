@@ -28,7 +28,7 @@ html {
 
 /* Pone un degradado de fondo */
 body {
-    background-image: linear-gradient(to top, var(--secundaryLight) 0%, var(--white));
+    background-color: linear-gradient(to top, var(--secundaryLight) 0%, var(--white));
 }
 
 /************************************************************************/
